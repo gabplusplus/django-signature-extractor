@@ -39,5 +39,5 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('extract/', include('extractor.urls')),
+    path('extract/', include('extractor.urls', namespace='extract')),
 ]

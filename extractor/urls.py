@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import *
 
-app_name = 'transaction'
+app_name = 'extract'
 
 urlpatterns = [
     path('upload/', ExtractCreate.as_view(), name='extract_sign'),
